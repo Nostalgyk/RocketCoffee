@@ -1,10 +1,30 @@
+/*Imports*/
+@import url('https://fonts.googleapis.com/css2?family=Bitter:wght@500&family=Oleo+Script+Swash+Caps:wght@400;700&display=swap');
 /*Global*/
+
+::-webkit-scrollbar{
+  width: 10px; 
+}
+
+::-webkit-scrollbar-track{
+  background: rgb(218, 174, 117);
+}
+
+::-webkit-scrollbar-thumb{
+  background: rgb(168, 135, 91);
+};
+
+html {
+  scroll-behavior: smooth;
+}
+
 *{
   margin: 0;
   padding: 0;
+
 }
 body {
-  font-family: 'Roboto', sans-serif;
+  font-family: 'Oleo Script Swash Caps', cursive;
   background-color: #FFEDD5;
 }
 
@@ -14,7 +34,7 @@ ul{
 
 /* Fonts */
 h1, h2, h3, .price{
-  font-family: 'Roboto Serif', serif;
+  font-family: 'Bitter', serif;
   text-transform: uppercase;
   color: #2D2C2A;
 }
@@ -40,6 +60,10 @@ header h1 span{
   color: #995000;
 }
 
+header h1 i{
+  margin: 0 5px;
+}
+
 header p{
   font-size: 14px;
   line-height: 16px;
@@ -53,14 +77,19 @@ section {
 
 section h2{
   background-color: #FED7AA;
+  border-radius: 20px 20px 0 0;
+  font-size: 18px;
   padding: 8px 16px;
   text-align: center;
-
-  margin-bottom: 24px;
-  font-size: 18px;
 }
 
 /*Lista*/
+ul{
+  background-color: #fff2ed;
+  border-radius: 0 0 20px 20px;
+  padding: 15px;
+}
+
 ul li{
   margin-bottom: 16px;
   display: flex;
